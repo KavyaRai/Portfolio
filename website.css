@@ -16,7 +16,7 @@
 .topnav a 
 {
   float: left;
-  color: #0A0A0A;
+  color: #262626;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px; 
@@ -44,7 +44,7 @@
 }
 .navbar a 
 {
-  color: #262626;
+  color: #0A0A0A;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 13px;
@@ -62,7 +62,7 @@
 .active 
 {
   background-color: #F2F2F2;
-  color: 262626;
+  color: #0A0A0A;
   font-size: 28px;
   font-weight: lighter;
 }
