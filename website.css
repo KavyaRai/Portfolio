@@ -29,6 +29,43 @@
   padding-right: 30px;
   padding-top: 5px;
 }
+.navbar 
+{
+  overflow: hidden;
+  background-color: #F2F2F2;
+  font-family: Source Sans Pro;
+  position: relative;
+}
+.navbar #myLinks 
+{
+  display: none;
+  text-align: center;
+  font-family: open sans;
+}
+.navbar a 
+{
+  color: #262626;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: lighter;
+  display: block;
+}
+.navbar a.icon 
+{
+  background: #F2F2F2;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active 
+{
+  background-color: #F2F2F2;
+  color: 262626;
+  font-size: 28px;
+  font-weight: lighter;
+}
 .row
 {
   height: 50%;
@@ -56,6 +93,10 @@
 .column_home img
 {
   width: 100%;
+}
+.column_home a
+{
+  text-decoration: none;
 }
 .overlay 
 {
@@ -115,8 +156,6 @@
   font-size: 20px;
   color: #262626;
   text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
 }
 .info_text
 {
@@ -124,9 +163,7 @@
   font-size: 15px;
   color: #262626;
   text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  
+  padding-top: 3%;
 }
 .colour
 {
@@ -193,11 +230,19 @@
 }
 @media (min-width: 1401px)
 {
+  .navbar
+  {
+    display: none;
+  }
   .img_arrow
   {
     display: all;
   }
   .img_arrowdown
+  {
+    display: none;
+  }
+  .info
   {
     display: none;
   }
@@ -214,6 +259,10 @@
     padding-right: 25px;
     padding-top: 5px;
   }
+  .navbar
+  {
+    display: none;
+  }
   .column 
   {
     position: relative;
@@ -229,6 +278,10 @@
     align-items: center;
     width: 50%;
     height: 100%;
+  }
+  .info
+  {
+    display: none;
   }
   .colour
   {
@@ -279,7 +332,7 @@
     padding-right: 10px;
     padding-top: 5px;
   }
- .column 
+  .column 
   {
     position: relative;
     float: left;
@@ -304,23 +357,9 @@
   {
     width: 150%;
   }
-  .title
+  .overlay
   {
-    position: relative;
-    font-family: Source Sans Pro;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 30%;
-  }
-  .text
-  {
-    font-family: open sans;
-    font-size: 15px;
-    color: white;
-    text-align: center;
-    vertical-align: middle;  
+    display: none;
   }
   .img_arrow
   {
@@ -334,7 +373,7 @@
   {
     position: relative;
     font-family: Source Sans Pro;
-    font-size: 16px;
+    font-size: 14px;
     color: #262626;
     text-align: left;
     margin: 1% 20%;
@@ -342,7 +381,7 @@
   .subtext
   {
     font-family: open sans;
-    font-size: 12px;
+    font-size: 10px;
     color: #262626;
     text-align: left;
     margin: 0% 20%;
